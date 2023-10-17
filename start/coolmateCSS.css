@@ -1,0 +1,981 @@
+body{ 
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav--top { 
+    background-color: blanchedalmond;
+    padding: 6.5px 60px; 
+    display: flex; 
+    justify-content: space-between;
+} 
+
+ /* .nav--top__block{
+    display: inline-block; 
+    margin-left: 500px;
+}
+.nav--top ul{
+    display: inline-block;
+} */
+.nav--top li {
+    display: inline-block;
+}  
+.nav--top__block span{
+    padding: 0 5px;
+}
+.nav--top li a{
+    color: #333; 
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav--mid {  
+    height: 32px;
+    background-color: #525252; 
+    text-align: center;  
+    padding-top: 6px; 
+    color: white; 
+}   
+.nav--mid a{
+    text-decoration: underline;
+}
+.nav--bot { 
+    height: 82px;
+    background-color: #231f20;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px; 
+
+    
+}
+.nav--bot__items ul li{
+    display: inline-block;
+    text-transform: uppercase; 
+    padding: 0 20px;
+    line-height: 82px; 
+    font-weight: 600; 
+    cursor: pointer; 
+}
+.nav--bot__icon{
+    display: inline-block;
+}  
+
+.nav--bot__icon img{
+    width: 60px;
+    height: 60px;
+}
+.nav--bot__icon p{
+    display: inline-block; 
+    background-color: red; 
+    /* position: relative;
+    width: 50px;
+    height: 100%; 
+    top: -13px; 
+    line-height: 82px;
+    text-align: center; */
+    
+}
+
+.nav--bot__function{
+    /* padding: 18px 0; */
+    line-height: 82px; 
+    display: inline-block; 
+}
+
+.nav--bot__function input {
+    width: 217px;
+    height: 50px;  
+    border-radius: 30px; 
+    padding: 0 20px; 
+    border: 0; 
+    outline: 0;
+
+} 
+.nav--bot__function img{
+   margin-top: 20px;
+}
+
+
+
+.brand--banner {
+    width: 100%;
+    
+} 
+.brand--banner img{
+    width: 100%; 
+    object-fit: cover;
+}
+
+.brand--text{
+    display: flex;
+    column-gap: 47px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 80px 0 10px  64px; 
+    align-items: center;
+    
+}
+
+.brand--text__hover{
+    color: lightgray;
+}
+
+.brand--text__hover:hover{
+    font-weight: bold;
+    color: gray;
+
+}
+
+.brand--text__column{
+    width: 3px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.178); ;
+    
+}
+
+.none--resert{
+    margin-top: 64px;
+}
+
+.brand--product1__allProduct{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.brand--product1 {
+    position: relative;
+    width: 344px;
+   
+    border-radius: 10px;
+    overflow: hidden;
+    
+    
+    
+ }
+
+ .brand--product1 .brand--product1__boxIMG >img {
+    width: 100%;
+    height: 70%;
+    /* lam cho img khong bi meo */
+    object-fit: cover;
+
+    
+
+    
+ }  
+ .brand--product1__boxIMG { 
+    position: relative;
+    /* hidden: ẩn đi phần thừa */
+    overflow: hidden;
+ }
+
+ .brand--product1__boxIMG:hover img {
+    /* hiệu ứng phóng to n lần kích thước ban đầu */
+    transform: scale(2); 
+ }
+
+ .brand--product1> p:first-child {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-size: 15px;
+ } 
+ .brand--product1 p:first-child span {
+    color: #2f5acf;
+ }  
+ .fa-star{
+    font-size: 13px;
+ }
+
+ .brand--product1__card {
+    position: absolute;
+    /* 80% an theo thang cha cua no */
+    width: 80%;
+    bottom: -20px;
+    /* trai 50% theo thang cha */
+    left: 50%; 
+    
+    transform: translateX(-50%);
+    /* background-color:rgba(128, 128, 128, 0.3); */ 
+    background-color: transparent;
+    text-align: center;
+    padding: 0 8px; 
+    border-radius: 8px;
+    opacity: 0;
+    backdrop-filter: blur(30px);
+    transition: all 0.3s linear;
+    
+    
+    
+}
+
+.brand--product1__boxIMG:hover .brand--product1__card {
+    opacity: 1;
+
+    /* khi hover card cach thang cha 30px */
+    bottom: 30px;
+   
+ }
+
+
+ .brand--product1__card__buttonSize {
+    width: 100%;
+    display: flex; 
+
+    /* điều khiển việc xuống dòng của các flex item trong trường hợp chúng không thể nằm trên cùng một dòng. */
+    flex-wrap: wrap;
+
+    /*  thiết lập khoảng cách giữa các flex item trong container. Giá trị đầu tiên xác định khoảng cách theo chiều ngang và giá trị thứ hai  xác định khoảng cách theo chiều doc */
+    gap: 10px 8px;
+   
+    
+
+ } 
+ 
+ .brand--product1__card__buttonSize button{
+    width: 70px;
+    height: 40px; 
+    border-radius: 5px; 
+    background-color: #fff; 
+    color: black;
+ }
+
+.brand--product1__card__buttonSize button:hover {
+    background-color: #333;
+    color: thistle;
+}
+ 
+ .brand--product1__New{ 
+    z-index: 1;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 22px;
+    position: absolute; 
+    text-align: center;
+    line-height: 22px; 
+     color: aliceblue;
+    right: 12px;
+    top: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    background-color: #2f5acf;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+ } 
+
+.brand--product1__DangMua{
+    z-index: 1;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 22px;
+    position: absolute;
+    text-align: center;
+    line-height: 22px;
+    color: aliceblue;
+    right: 12px;
+    top: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    background-color: #214b09;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+} 
+
+.brand--product1__Sale {
+    z-index: 1;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 22px;
+    position: absolute;
+    text-align: center;
+    line-height: 22px;
+    color: aliceblue;
+    right: 12px;
+    top: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    background-color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+ .brand--product1__color{
+    display: flex;
+    column-gap: 5px;
+ }
+
+ .brand--product1__color__setting {
+    width: 35px;
+    height: 20px;
+    border-radius: 12px; 
+    border: 3px solid #fff;  
+    cursor: pointer;
+ } 
+ .brand--product1__color__setting:hover{
+        outline: 1px solid black; 
+ }
+
+ h4, h5, h6  {
+    color: #231f20;
+    font-size: 14px;
+    line-height: 25px;
+   
+    
+ }
+
+ h5 {
+    color: #00000049;
+}
+ h6 {
+    color: #242424;
+ }
+
+.brand--product1 p:last-child {
+    color: #33333341;
+ }
+
+.Running {
+    display: flex;
+    justify-content: space-around;
+}
+
+ .brand--running {
+
+    object-position: center;
+    position: relative;
+    margin-top: 50px;
+
+    
+}
+
+.brand--running__img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.brand--running__poster__content {
+    position: absolute;
+    top: 20%;
+    left: 50px; 
+    transform: translateY(-60%);
+} 
+.brand--running__poster__content h1{
+    font-size: 80px; 
+    font-weight: bold; 
+}
+
+.brand--running__poster__content p {
+    font-size: 20px;
+    /* khoang cach cua tong le tren le duoi cua content */
+    line-height: 30px;
+}
+
+.brand--running__poster__content p:nth-child(4) {
+    color: #2f5acf; 
+    font-weight: 600;
+    
+}
+
+.brand--running__poster__content button {
+    background-color: #231f20;
+    color: white;
+    padding: 14px 60px ;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.brand--running__title {
+    width: 95%;
+    color:#231f20;
+    font-size:28px;
+    font-weight:700;
+    line-height:42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    line-height: 42px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 80px 0 10px  64px; 
+}
+
+.brand--running__title >a {
+    color: #221d1e65;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-color: #1b191af1;
+}
+
+.brand--running__card {
+    position: relative;
+    width: 22%;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    
+   
+}
+
+.brand--running__card__IMG {
+    position: relative;
+}
+
+.brand--running__card__IMG--FBack {
+    z-index: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.brand--running__card__IMG--FBack >p >span {
+    /* tham chieu phai den chinh no >p >span */
+    color: #2f5acf;
+}
+
+.IMG  {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    /* lam cho img khong bi meo */
+    object-fit: cover;
+    background-size: cover;
+    transition: background-image 0.5s ease; 
+    
+}
+
+/* .brand--running__card__IMG >img:hover {
+    opacity: 0;
+} */
+
+/* .brand--running__card__IMG >img:hover {
+    background-image: url('https://png.pngtree.com/element_origin_min_pic/16/08/28/1657c2a46404375.jpg');
+    width: 100%;
+    height: 70%;
+    lam cho img khong bi meo
+    object-fit: cover;
+    background-size: cover;
+    background-color: rebeccapurple; 
+
+} */
+
+
+.image--block {
+    position: relative;
+}
+.hoverIMG {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    
+    /* lam cho img khong bi meo */
+    object-fit: cover;
+    background-size: cover;
+}
+.IMG:hover{
+    opacity: 0;
+}
+
+.image--block:hover > .hoverIMG {
+        opacity: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+}
+
+.brand--running__IMG--Box {
+    position: absolute;
+    backdrop-filter: blur(10px);
+    top: 70%;
+    left: 5%;
+    text-align: center;
+    background-color: transparent;
+    
+    border-radius: 8px;
+    
+    opacity: 0;
+    transition: all 0.5s linear;
+    transform: translateY(-50%);
+
+    
+}
+
+
+
+
+
+.brand--running__card__IMG:hover .brand--running__IMG--Box {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.brand--running__IMG--Box__Size {
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    margin-top: 15px;
+}
+
+.brand--running__IMG--Box__Size >button {
+    width: 52px;
+    height: 35px; 
+    border-radius: 5px; 
+    background-color: #fff; 
+    color: black;
+}
+
+.brand--running__IMG--Box__Size >button:hover {
+    background-color: #333;
+    color: thistle;
+}
+
+.brand--running__card__color {
+    display: flex;
+    column-gap: 5px;
+}
+
+
+.brand--running__card__color__setting{
+
+    width: 42px;
+    height: 24px;
+    border-radius: 12px; 
+    border: 3px solid #fff;  
+    cursor: pointer;
+
+}
+
+.brand--running__card__info {
+    z-index: 1;
+    color: #231f20;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+
+}
+
+.brand--running__card__info >p:nth-child(2) {
+    color: #574e4e69;
+}
+
+.brand--running__card__info >p:last-child {
+    color: blue;
+    font-weight: 600;
+    font-style: italic;
+}
+.brand--running__card__color__setting:hover {
+    outline: 1px solid black; 
+
+}
+
+
+.message {
+    position: relative;
+    width: 100%;
+    padding: 81px 64px 0 64px;
+    
+   
+}
+.message >img {
+    width: 100%;
+    object-fit: cover;
+    
+    
+}
+
+.message--box {
+    position: absolute;
+    top: 10%;
+    padding-top: 48px;
+    padding-left: 48px;
+    
+    
+}
+
+.message--box >img {
+    width: 70%;
+
+}
+
+h2 {
+    line-height: 1.25;
+    color: #f5f5f5;
+    font-size: 3.2rem;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.message--box >button {
+    margin: 15px 0 0 0;
+    color: #000;
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.Trend {
+    width: 100%;
+    padding: 59px 64px 0 64px;
+    display: flex;
+    gap: 18px;
+    
+}
+
+.Trend--card  {
+    position: relative;
+    width: 50%;
+    
+}
+
+.Trend--card__box {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+
+}
+
+.Trend--card >img {
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.Trend--card__box >p {
+    
+    color:#ffffff;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:20px;
+    /* letter-spacing: khoảng cách giữa các ký tự trong một đoạn văn bản  */
+    letter-spacing:2px;
+    line-height:30px;
+    font-weight: 500;
+}
+
+.Trend--card__box >button {
+    
+    /* margin: 5px 0 0 0; */
+    color: #000;
+    border: 2px solid #934509;
+    padding: 8px 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+     
+}
+
+.Card--menu {
+    width: 100%;
+    padding: 59px 64px 0 64px;
+    display: flex;
+    gap: 20px;
+    
+}
+
+
+
+.Card--menu >img {
+    width: 24%;
+    cursor: pointer;
+}
+
+.Sale {
+    position: relative;
+    width: 100%;
+    padding: 59px 64px 0 64px;
+}
+.Sale >img {
+    width: 100%;
+    object-fit: cover;
+}
+.Sale--box {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.Sale--box >h2 {
+    font-size: 70px;
+   
+}
+
+.Sale--box > p {
+    font-size: 15px;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.Sale--box >button {
+    background-color: #000;
+    color: whitesmoke;
+    padding: 15px 50px;
+    border-radius: 12px;
+    margin-top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+
+.diary {
+    padding: 40px 61px ;
+}
+
+.diary--title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+}
+.diary--info {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 21px;
+  }
+
+.diary--pics {
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+}
+
+.pics__photo{
+    position: relative;
+    padding-top: 16px;
+    width: 18%;
+    height: 100%;
+    /* height: 350px;  */
+} 
+.pics__photo::after{
+    content: ""; 
+    position: absolute; 
+    width: 30px;
+    height: 30px;
+    background-image: url(https://mcdn.coolmate.me/image/March2023/mceclip1_28.png); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    top: 25px;
+    right: 10px;
+}
+.pics__photo >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.end {
+    background-color: black;
+    width: 100%;
+    padding: 0 64px ;
+    margin-top: 50px;
+    
+}
+
+.end--top {
+    display: flex;
+    padding: 30px 0;
+    border-bottom: .5px solid rgba(245, 245, 245, 0.637);
+}
+
+.end--top__first {
+    flex: 1;
+}
+
+.end--top__first >h3 {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 27px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.end--top__first >p {
+    color:#d9d9d9;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:12px;
+    line-height:20.8px;
+    font-weight: bold;
+    
+}
+
+.end--top__first >button {
+    text-align: center;
+    background: #2f5acf;
+    border-radius: 16px;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .03em;
+    margin-bottom: 25px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 25px;
+
+}
+
+.end--top__second {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 100px;
+    
+    
+}
+
+.end--top__second__item{
+    display: flex;
+    align-items: center;
+}
+
+.top__second__icon {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.information >p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 160%;
+    letter-spacing: .03em;
+    color: #fff;
+}
+
+.end--top__last {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.end--top__last a   {
+    transform: translateY(-50%);
+    display: flex;
+    width: auto;
+    height: 50px;
+}
+
+.end--top__last a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.end--middle {
+    display: flex;
+    padding: 25px 0;
+    border-bottom: .5px solid rgba(245, 245, 245, 0.637);
+
+}
+
+.end--middle__box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.end--middle__box h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 200%;
+   
+    
+}
+
+.end--middle__box ul {
+    margin-top: 10px;
+    
+}
+
+.end--middle__box ul li {
+    font-size: 13px;
+    padding-top: 15px;
+}
+
+.end--middle__box ul li:hover a {
+    color: darkgoldenrod;
+}
+
+.end--middle__box2 {
+    margin-top: 35px;
+}
+
+
+
+.end--middle__box3 >u 
+{
+    font-size: 13px;
+    line-height: 200%;
+    color: #d9d9d9;
+}
+.end--middle__box3 >p  {
+    font-size: 13px;
+    line-height: 200%;
+    color: #d9d9d9;
+}
+
+
+.end--middle__box3  p {
+    margin-top: 20px ;
+    
+}
+.end--middle__box3  p:last-child {
+    margin-top: 21px;
+}
+
+.end--bot {
+    display: flex;
+    padding: 15px 0 50px;
+    
+}
+
+.end--bot__1 {
+    flex: 1;
+}
+
+.end--bot__1 p {
+    color: whitesmoke;
+    font-size: 10px;
+}
+.end--bot__2 {
+    display: flex;
+    
+}
+
+.end--bot__2 >a img {
+    
+    margin-right: 13px;
+    object-fit: cover;
+}
