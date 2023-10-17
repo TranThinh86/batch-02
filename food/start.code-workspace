@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "start",
+			"path": "../start"
+		},
+		{
+			"name": "assets",
+			"path": "assets"
+		},
+		{
+			"name": "FoodWeb",
+			"path": "."
+		},
+		{
+			"path": "../FoodService"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FoodWeb"
+	}
+}
