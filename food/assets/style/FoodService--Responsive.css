@@ -2,26 +2,22 @@
     /* .container .containerBox .box:last-child {
         margin-right: 35%;
         
-    }
+    } */
 
     .container .containerBox .box {
-        margin-top: 20px;
+        margin: 0;
     }
     .title {
         font-size: 2.5em;
-    } */
-    .container .containerBox {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
+    } 
     
-}
+    
+}   
 @media only screen and (max-width: 768px)  {
-    .container .containerBox .box:last-child {
+    /* .container .containerBox .box:last-child {
         margin: auto;
         
-    }
+    } */
     .container .containerBox .box {
         margin-top: 20px;
         
@@ -31,8 +27,8 @@
     }
     .container .containerBox .box--titleSub {
         
-            font-size: 25px;
+            font-size: 20px;
             width: 350px;
-            font-weight: 500;
+            font-weight: 400;
     }
 }
