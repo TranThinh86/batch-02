@@ -103,4 +103,76 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.order {
+  padding: 48px;
+}
+.order__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order__top .topInfo {
+  display: flex;
+  align-items: center;
+}
+.order__top .topInfo h3 {
+  color: #101010;
+  font-family: Inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 117.647% */
+  letter-spacing: -0.34px;
+}
+.order__top .topInfo img {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.order__top img {
+  width: 68px;
+  height: 29px;
+  flex-shrink: 0;
+}
+.order__bot {
+  margin-top: 84px;
+}
+.order__bot .boxFood {
+  display: flex;
+  background-color: #939393;
+  width: 270px;
+  height: 130px;
+  flex-shrink: 0;
+}
+.order__bot .boxFood__content {
+  padding: 20px 0;
+}
+.order__bot .boxFood__content h5 {
+  color: #171717;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.24px;
+}
+.order__bot .boxFood__content .content__sub {
+  width: 70px;
+}
+.order__bot .boxFood__content .content__sub p {
+  color: #969696;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 138.889% */
+}
+.order__bot .boxFood__content .content__sub .price {
+  color: #FF4415;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
 }/*# sourceMappingURL=FoodService.css.map */

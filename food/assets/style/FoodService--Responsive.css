@@ -32,3 +32,9 @@
             font-weight: 400;
     }
 }
+
+@media only screen and (max-width: 360px) {
+    .menu_item {
+        width: 100%;
+    }
+}
