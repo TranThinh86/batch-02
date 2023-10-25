@@ -1,0 +1,47 @@
+@media only screen and (max-width: 992px) {
+    .menu__item {
+        width: calc((100% / 2) - 30px);
+        
+    }
+
+    .html {
+        font-size: 13px;
+    }
+}
+
+@media only screen and ( max-width: 768px) {
+    .menu__item {
+        width: calc((100% / 1) -30px);
+        margin: auto;
+        
+    }
+    .html {
+        font-size: 8px;
+    }
+}
+
+@media only screen and ( max-width: 640px) {
+    .menu__item {
+        width: 100%;
+        margin: 0 30px;
+    }
+    .title {
+        font-size: 2rem;
+        
+    }
+}
+
+@media only screen and ( max-width: 480px) {
+    .title {
+        font-size: 20px;
+    }
+    .title__sub {
+        font-size: 30px;
+        line-height: 100%;
+    }
+    .menu__item {
+        margin-bottom: 20px;
+    }
+}
+
+
