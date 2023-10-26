@@ -1,0 +1,128 @@
+:root {
+    --gap: 30px;
+    --number: 1;
+  }
+
+
+@mixin media-sm-down() {
+    @media only screen and (max-width:576px) {
+        @content
+    }
+}
+
+
+@mixin media-sm-up() {
+    @media only screen and (min-width:576px) {
+        @content
+    }
+}
+
+@mixin media-md-up() {
+    @media only screen and (min-width:768px) {
+        @content
+    }
+}
+
+@mixin media-lg-up() {
+    @media only screen and (min-width:992px) {
+        @content
+    }
+}
+
+@mixin media-xl-up() {
+    @media only screen and (min-width:1200px) {
+        @content
+    }
+}
+
+
+
+@include media-sm-down {
+    .order {
+        width: 100%;
+        
+    }
+    .order__top {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        
+    }
+    .order__top .topInfo h3 {
+        font-size: 20px;
+    }
+    .order__top .topInfo img {
+        width: 14px;
+        
+    }
+    .order__top img {
+        width: 45px;
+    }
+    .order__bot {
+        
+        margin: 0 30px;
+        margin-top: 25px;
+    }
+
+    .order__bot .boxFood {
+        
+        width: calc((100% - (var(--gap) * (var(--number) - 1))) / var(--number));
+    }
+}
+
+@include media-sm-up {
+    .order {
+        max-width: 540px;
+        margin-top: 25px;
+    }
+
+    
+    .order__bot .boxFood {
+       
+        width: calc((100% - (var(--gap) * (var(--number) - 1))) / var(--number));
+    }
+}
+
+@include media-md-up {
+    .container .containerBox .box {
+        margin: 0;
+    }
+    /* question */
+    .order {
+        max-width: 720px;
+    }
+    :root {
+        --number: 2;
+      }
+}
+
+@include media-lg-up {
+    
+    /* question */
+    .order {
+        max-width: 960px;
+    }
+    :root {
+        --number: 3;
+      }
+}
+@include media-xl-up {
+    
+    /* question */
+    .order {
+        max-width: 1140px;
+    }
+    :root {
+        --number: 4;
+      }
+}
+/* xs
+<576px	sm
+≥576px	md
+≥768px	lg
+≥992px	xl
+≥1200px	xxl
+≥1400px */
+
+/* 540px	720px	960px	1140px	1320px */
