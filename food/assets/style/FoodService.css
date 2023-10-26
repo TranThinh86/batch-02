@@ -105,7 +105,8 @@
   line-height: normal;
 }
 .order {
-  padding: 48px;
+  max-width: 1170px;
+  margin: auto;
 }
 .order__top {
   display: flex;
@@ -137,16 +138,21 @@
 }
 .order__bot {
   margin-top: 84px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .order__bot .boxFood {
+  position: relative;
   display: flex;
-  background-color: #939393;
+  background-color: #F6F6F6;
   width: 270px;
   height: 130px;
   flex-shrink: 0;
+  border-radius: 24px;
 }
 .order__bot .boxFood__content {
-  padding: 20px 0;
+  padding: 20px 30px;
 }
 .order__bot .boxFood__content h5 {
   color: #171717;
@@ -159,6 +165,7 @@
 }
 .order__bot .boxFood__content .content__sub {
   width: 70px;
+  margin-top: 16px;
 }
 .order__bot .boxFood__content .content__sub p {
   color: #969696;
@@ -175,4 +182,15 @@
   font-style: normal;
   font-weight: 600;
   line-height: 25px;
+}
+.order__bot .boxFood__img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.order__bot .boxFood__img img {
+  width: 130px;
+  height: 130px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=FoodService.css.map */
