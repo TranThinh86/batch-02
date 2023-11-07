@@ -1,0 +1,27 @@
+.head {
+    background: #8bd3dd;
+
+    nav {
+        a {
+            background: #f582ae;
+            color: #f3d2c1;
+        }
+    }
+}
+
+.container {
+    &__box {
+        background: #f3d2c1;
+        .box--login {
+            .login--group {
+                input {
+                    background: #f582ae;
+                }
+                button {
+                    margin-top: 20px;
+                    background: #8bd3dd;
+                }
+            }
+        }
+    }
+}

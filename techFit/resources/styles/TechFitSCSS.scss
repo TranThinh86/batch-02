@@ -1,0 +1,193 @@
+.head {
+    
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // border-radius: 30px;
+    background: #232946;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.20);
+
+    nav {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+       .logo {
+        width: 40px;
+        height: 30px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+       }
+        a {
+            padding: 5px 15px;
+            border-radius: 30px;
+            border-right: 1px solid rgba(0, 0, 0, 0.18);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+            background: #b8c1ec;
+            color: #232946;
+            text-align: center;
+            font-family: 'Poppins';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height:166.667% ;
+            cursor: pointer;
+        }
+    }
+    .search {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+            padding: 5px;
+            border-radius: 5px 5px;
+           
+        }
+
+        i {
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+.container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // height: 100vh;
+
+    &__image {
+        // width: 559px;
+        height: 450;
+        
+        flex-shrink: 0;
+       img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        
+       }
+    }
+
+    &__box {
+        margin-right: 30px;
+        width: 479px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        border-radius: 27px;
+        border: 1px solid rgba(255, 255, 255, 0.80);
+        // opacity: 0.5;
+        // background: linear-gradient(109deg, rgba(201, 201, 201, 0.80) 1.57%, rgba(196, 196, 196, 0.10) 100%);
+        // background-image: url(../img/mesh-gradient.png);
+        background-color: #b8c1ec;
+        backdrop-filter: blur(30px);
+        object-fit: contain;
+        
+       
+        .box--title {
+           
+            h1 {
+                color: #fffffe;
+                text-align: center;
+                font-family: 'Iceland', sans-serif;
+                font-size: 34px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 1.02px;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                color: #fffffe;
+                text-align: center;
+                font-family: 'Iceland', sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.42px;
+            }
+        }
+        .box--login {
+            padding: 10px;
+            margin-top: 12px;
+
+            .login--group {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                label {
+                    padding: 5px;
+                    color: #fffffe;
+                    text-align: center;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.42px;
+                }
+
+                input {
+                    width: 100%;
+                    border-radius: 12px;
+                    border: 1px solid rgba(0, 0, 0, 0.25);
+                    background: rgba(196, 196, 196, 0.00);
+                    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+                    text-align: center;
+                }
+                
+                button {
+                    border-radius: 7px;
+                    background-color:#eebbc3 ;
+                    width: 100%;
+                    height: 20px;
+                    
+                }
+                
+            }
+            p {
+                padding: 10px;
+                color: #181818;
+                font-family: Poppins;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.36px;
+                
+            }
+            .regist {
+                text-align: center;
+                color: #595959;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.3px;
+
+                a {
+                    color: #eebbc3;
+                    font-family: Poppins;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+                }
+            }
+        }
+    }
+}

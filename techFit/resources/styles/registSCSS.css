@@ -1,0 +1,18 @@
+.head {
+  background: #8bd3dd;
+}
+.head nav a {
+  background: #f582ae;
+  color: #f3d2c1;
+}
+
+.container__box {
+  background: #f3d2c1;
+}
+.container__box .box--login .login--group input {
+  background: #f582ae;
+}
+.container__box .box--login .login--group button {
+  margin-top: 20px;
+  background: #8bd3dd;
+}/*# sourceMappingURL=registSCSS.css.map */

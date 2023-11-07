@@ -1,0 +1,167 @@
+.head {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #232946;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.head nav {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.head nav .logo {
+  width: 40px;
+  height: 30px;
+}
+.head nav .logo img {
+  width: 100%;
+  height: 100%;
+}
+.head nav a {
+  padding: 5px 15px;
+  border-radius: 30px;
+  border-right: 1px solid rgba(0, 0, 0, 0.18);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+  background: #b8c1ec;
+  color: #232946;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166.667%;
+  cursor: pointer;
+}
+.head .search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head .search input {
+  padding: 5px;
+  border-radius: 5px 5px;
+}
+.head .search i {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__image {
+  height: 450;
+  flex-shrink: 0;
+}
+.container__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container__box {
+  margin-right: 30px;
+  width: 479px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 27px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: #b8c1ec;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container__box .box--title h1 {
+  color: #fffffe;
+  text-align: center;
+  font-family: "Iceland", sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.02px;
+  text-transform: uppercase;
+}
+.container__box .box--title h3 {
+  color: #fffffe;
+  text-align: center;
+  font-family: "Iceland", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+.container__box .box--login {
+  padding: 10px;
+  margin-top: 12px;
+}
+.container__box .box--login .login--group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.container__box .box--login .login--group label {
+  padding: 5px;
+  color: #fffffe;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+.container__box .box--login .login--group input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background: rgba(196, 196, 196, 0);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.container__box .box--login .login--group button {
+  border-radius: 7px;
+  background-color: #eebbc3;
+  width: 100%;
+  height: 20px;
+}
+.container__box .box--login p {
+  padding: 10px;
+  color: #181818;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+.container__box .box--login .regist {
+  text-align: center;
+  color: #595959;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.3px;
+}
+.container__box .box--login .regist a {
+  color: #eebbc3;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.3px;
+}/*# sourceMappingURL=TechFitSCSS.css.map */
